@@ -29,3 +29,5 @@
 /public
 
 .DS_Store
+
+/config/env.yml

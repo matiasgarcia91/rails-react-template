@@ -1,0 +1,13 @@
+{
+  "name": "gabinete-exquisito",
+  "license": "MIT",
+  "engines": {
+    "node": "10.15.3",
+    "yarn": "1.3.2"
+  },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  }
+}
