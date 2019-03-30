@@ -27,3 +27,5 @@
 /config/master.key
 
 /public
+
+.DS_Store
