@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Template for a React app with a Rails API-only backend. ActiveAdmin and ActiveStorage come preconfigured for easy backend manipulation.
+React-Router is also set up.
 
-Things you may want to cover:
+Heroku also comes configured to run both locally or remotely as well as to push builds.
 
-* Ruby version
 
-* System dependencies
+### To run:
 
-* Configuration
+First, install the necessary packages.
+`bundle install
+cd client/
+yarn install`
 
-* Database creation
+Create an env.yml with the following keys using your postgre credentials:
+`SECRET_KEY_BASE
+DB_USERNAME
+DB_PASSWORD`
 
-* Database initialization
 
-* How to run the test suite
+Make sure you have postgre up and running and run db creation from root
+`bin/rake db:create
+bin/rake db:migrate
+bin/rake db:seed`
 
-* Services (job queues, cache servers, search engines, etc.)
+To start both apps run:
+`bin/rake start`
 
-* Deployment instructions
+To run only the server:
+`bin/rails s -p 3001`
 
-* ...
+Only react app:
+`cd client/
+yarn start`
