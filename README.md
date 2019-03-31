@@ -9,20 +9,26 @@ Heroku also comes configured to run both locally or remotely as well as to push 
 ### To run:
 
 First, install the necessary packages.
-`bundle install
+```
+bundle install
 cd client/
-yarn install`
+yarn install
+```
 
 Create an env.yml with the following keys using your postgre credentials:
-`SECRET_KEY_BASE
+```
+SECRET_KEY_BASE
 DB_USERNAME
-DB_PASSWORD`
+DB_PASSWORD
+```
 
 
 Make sure you have postgre up and running and run db creation from root
-`bin/rake db:create
+```
+bin/rake db:create
 bin/rake db:migrate
-bin/rake db:seed`
+bin/rake db:seed
+```
 
 To start both apps run:
 `bin/rake start`
@@ -31,5 +37,7 @@ To run only the server:
 `bin/rails s -p 3001`
 
 Only react app:
-`cd client/
-yarn start`
+```
+cd client/
+yarn start
+```
