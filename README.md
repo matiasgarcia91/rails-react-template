@@ -5,6 +5,8 @@ React-Router is also set up.
 
 Heroku also comes configured to run both locally or remotely as well as to push builds.
 
+Built following this amazing article: https://blog.heroku.com/a-rock-solid-modern-web-stack
+
 
 ### To run:
 
